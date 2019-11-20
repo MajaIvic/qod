@@ -19,7 +19,11 @@
 }
 .link-to-red {
   p a {
+    padding-right: 2em;
     text-decoration: none;
     color: #0c0;
+  }
+  p {
+    padding-left: 0.8em;
   }
 }

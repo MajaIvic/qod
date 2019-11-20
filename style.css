@@ -606,8 +606,12 @@ object {
   color: #0c0; }
 
 .link-to-red p a {
+  padding-right: 2em;
   text-decoration: none;
   color: #0c0; }
+
+.link-to-red p {
+  padding-left: 0.8em; }
 
 body {
   background: #222;
@@ -665,5 +669,9 @@ button {
     text-decoration: none;
     color: #0c0; }
 
-.quote-submission-wraper div input {
+label {
   display: block; }
+
+.nav-previous a {
+  text-decoration: none;
+  color: #0c0; }
