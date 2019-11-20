@@ -14,7 +14,7 @@ get_header(); ?>
             <header class="entry-header">
          		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
          	</header><!-- .entry-header -->
-
+           
             <div class="post-archives clearfix">
                <h2>Quote Authors</h2>
                <ul>
