@@ -1,1 +1,5 @@
-
+.entry-content {
+  @include tablet p {
+    font-size: 1rem;
+  }
+}

@@ -7,9 +7,15 @@ body {
 img {
   width: 22em;
   padding: 2em 2em 0 0;
+  @include tablet {
+    width: 35em;
+  }
 }
 p {
   font-size: 1.14rem;
+  @include tablet {
+    font-size: 1.75rem;
+  }
 }
 .source {
   padding-top: 1.7em;

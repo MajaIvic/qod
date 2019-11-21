@@ -9,9 +9,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     line-height: 2em;
+
     a {
       text-decoration: none;
       color: #0c0;
+      @include tablet {
+        font-size: 1.3rem;
+      }
     }
   }
 }

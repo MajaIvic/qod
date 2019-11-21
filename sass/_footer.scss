@@ -25,5 +25,16 @@
   }
   p {
     padding-left: 0.8em;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+}
+
+.nav-info p {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
