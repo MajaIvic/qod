@@ -16,9 +16,9 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					
 				</nav><!-- #site-navigation -->
-				<div class="link-to-red">
-				<p>Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>
-</div>
+				
+				<p class="link-to-red">Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>
+
 </div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

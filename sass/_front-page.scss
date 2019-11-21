@@ -11,12 +11,7 @@ img {
     width: 35em;
   }
 }
-p {
-  font-size: 1.14rem;
-  @include tablet {
-    font-size: 1.75rem;
-  }
-}
+
 .source {
   padding-top: 1.7em;
   a {

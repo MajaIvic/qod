@@ -13,9 +13,6 @@
     a {
       text-decoration: none;
       color: #0c0;
-      @include tablet {
-        font-size: 1.3rem;
-      }
     }
   }
 }

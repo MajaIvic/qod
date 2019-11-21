@@ -1,40 +1,38 @@
-.menu-toggle {
-  visibility: hidden;
+footer {
+  height: 350px;
+  margin-top: 18%;
 }
-.menu-main-menu-container {
-  padding-top: 7em;
+// .nav-info {
+// }
+
+// .main-navigation {
+// }
+.nav-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu {
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+
   li {
     border-right: 1px solid #fff;
     line-height: 1;
-    padding: 0 1rem;
   }
-  li:last-child {
-    border-right: none;
-  }
-}
-.main-navigation {
   a {
+    text-decoration: none;
     color: #0c0;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 .link-to-red {
-  p a {
-    padding-right: 2em;
+  a {
     text-decoration: none;
     color: #0c0;
-  }
-  p {
-    padding-left: 0.8em;
-    @include tablet {
-      font-size: 1rem;
-    }
-  }
-}
-
-.nav-info p {
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 }
