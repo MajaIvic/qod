@@ -196,7 +196,7 @@ input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -229,17 +229,14 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border: 2px solid;
+  border-color: #0c0;
   border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  background: #222;
+  color: #0c0;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 0.6rem 2rem 0.4rem; }
   button:hover,
   input[type='button']:hover,
   input[type='reset']:hover,
@@ -263,8 +260,8 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  background-color: #222;
+  border: 2px solid #0c0;
   border-radius: 3px; }
   input[type='text']:focus,
   input[type='email']:focus,
@@ -284,6 +281,9 @@ input[type='search'] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.fa-search {
+  border-color: #222; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -391,8 +391,8 @@ object {
 /* All Archives Page */
 /* Submit a Quote Page */
 footer {
-  height: 350px;
-  margin-top: 18%; }
+  height: 80px;
+  margin-top: 10%; }
 
 .nav-info {
   display: -webkit-box;
@@ -420,15 +420,22 @@ footer {
     padding-right: 1em;
     padding-left: 1em; }
 
-.link-to-red a {
-  text-decoration: none;
-  color: #0c0; }
+.link-to-red {
+  padding-left: 1em; }
+  .link-to-red a {
+    text-decoration: none;
+    color: #0c0; }
 
 body {
   background: #222;
   color: white;
-  padding: 2em;
-  line-height: 1.5; }
+  padding: 1em;
+  line-height: 1.5;
+  font-family: 'Exo', sans-serif;
+  font-weight: lighter; }
+  body a {
+    text-decoration: none;
+    color: #0c0; }
 
 img {
   width: 22em;
@@ -463,6 +470,32 @@ button {
   line-height: 1;
   padding: 0.8em 2.5em; }
 
+.post .entry-content p {
+  font-size: 1.25rem; }
+  @media (min-width: 600px) {
+    .post .entry-content p {
+      font-size: 2rem; } }
+
+@media (min-width: 1000px) {
+  .site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative; }
+    .site-content:before {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f10d';
+      position: absolute;
+      color: green;
+      left: -175px;
+      top: -61px;
+      font-weight: 900; }
+    .site-content:after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f10e';
+      position: absolute;
+      top: -61px;
+      right: -175px;
+      font-weight: 900; } }
+
 .entry-content p {
   font-size: 1rem; }
 
@@ -481,11 +514,33 @@ button {
   line-height: 2em; }
   .browse-archives ul a {
     text-decoration: none;
-    color: #0c0; }
+    color: #0c0;
+    font-size: 1rem; }
+    @media (min-width: 600px) {
+      .browse-archives ul a {
+        font-size: 1.25rem; } }
+
+.quote-submission-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .quote-submission-wrapper div {
+    padding: 1.5em 0; }
 
 label {
   display: block; }
 
+.error-404 label {
+  display: inline; }
+
 .nav-previous a {
   text-decoration: none;
   color: #0c0; }
+
+.category article {
+  border-bottom: 1px dotted white;
+  padding-bottom: 1em; }
+
+.category .page-title {
+  border-bottom: 1px dotted white;
+  padding-bottom: 1em; }

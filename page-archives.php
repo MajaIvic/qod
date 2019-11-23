@@ -43,7 +43,7 @@ get_header(); ?>
 
                <ul>
                <?php foreach( $tags as $tag ): ?>
-                  <li><a href="<?php  ?>"><?php echo $tag->name; ?></a></li>
+                  <li><a href="<?php  echo get_term_link( $tag ); ?>"><?php echo $tag->name; ?></a></li>
                <?php endforeach; ?>
                </ul>
                <?php /*wp_tag_cloud( array(

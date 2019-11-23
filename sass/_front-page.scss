@@ -1,8 +1,14 @@
 body {
   background: #222;
   color: white;
-  padding: 2em;
+  padding: 1em;
   line-height: 1.5;
+  font-family: 'Exo', sans-serif;
+  font-weight: lighter;
+  a {
+    text-decoration: none;
+    color: #0c0;
+  }
 }
 img {
   width: 22em;
@@ -33,4 +39,42 @@ button {
 
   line-height: 1;
   padding: 0.8em 2.5em;
+}
+
+.post {
+  .entry-content {
+    p {
+      font-size: 1.25rem;
+      @include tablet {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.site-content {
+  @include desktop {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative;
+    &:before {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f10d';
+      position: absolute;
+      color: green;
+      left: -175px;
+      top: -61px;
+      // font-size: $icon;
+      font-weight: 900;
+    }
+    &:after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f10e';
+      position: absolute;
+      // color: $color__border;
+      top: -61px;
+      right: -175px;
+      // font-size: $icon;
+      font-weight: 900;
+    }
+  }
 }
