@@ -14,4 +14,7 @@
 <li>Ajax</li>
 <li>eslint</li>
 <li>npm</li>
+<li>php</li>
 </ul>
+<h2>Features</h2>
+<p>Quotes on Dev Web page alowes us to read qoutes from diferent authores. Also alowing us as idividuales to post quotes our selfs. Some of the outhores have links to there acounts on twitter and there web pages.</p>
