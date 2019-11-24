@@ -276,11 +276,24 @@ input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'] {
-  padding: 3px; }
+  padding: 0.5em 2em; }
+  @media (min-width: 600px) {
+    input[type='text'],
+    input[type='email'],
+    input[type='url'],
+    input[type='password'],
+    input[type='search'] {
+      padding: 0.5em 10em; } }
 
 textarea {
   padding-left: 3px;
   width: 100%; }
+  @media (min-width: 600px) {
+    textarea {
+      width: 130%; } }
+  @media (min-width: 1000px) {
+    textarea {
+      width: 130%; } }
 
 .fa-search {
   border-color: #222; }
@@ -403,6 +416,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1000px) {
+    .nav-info {
+      padding-left: 50em; } }
 
 .menu {
   display: -webkit-inline-box;
@@ -412,7 +428,7 @@ footer {
   padding-left: 0;
   margin-left: 0; }
   .menu li {
-    border-right: 1px solid #fff;
+    border-right: 1px solid white;
     line-height: 1; }
   .menu a {
     text-decoration: none;
@@ -433,6 +449,9 @@ body {
   line-height: 1.5;
   font-family: 'Exo', sans-serif;
   font-weight: lighter; }
+  @media (min-width: 1000px) {
+    body .logo {
+      text-align: center; } }
   body a {
     text-decoration: none;
     color: #0c0; }
@@ -443,6 +462,9 @@ img {
   @media (min-width: 600px) {
     img {
       width: 35em; } }
+  @media (min-width: 1000px) {
+    img {
+      width: 45em; } }
 
 .source {
   padding-top: 1.7em; }
@@ -457,6 +479,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+
+@media (min-width: 1000px) {
+  .button {
+    padding-left: 15em; } }
 
 button {
   font-size: 1.1rem;
@@ -475,26 +501,34 @@ button {
   @media (min-width: 600px) {
     .post .entry-content p {
       font-size: 2rem; } }
+  @media (min-width: 1000px) {
+    .post .entry-content p {
+      font-size: 2.5rem;
+      text-align: center; } }
 
 @media (min-width: 1000px) {
   .site-content {
-    margin: 4.5rem 175px 1.5rem;
-    position: relative; }
-    .site-content:before {
-      font-family: 'Font Awesome 5 Free';
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto; }
+    .site-content::before {
       content: '\f10d';
+      font-family: 'FontAwesome';
+      font-size: 8rem;
+      font-weight: 900;
       position: absolute;
-      color: green;
       left: -175px;
-      top: -61px;
-      font-weight: 900; }
-    .site-content:after {
-      font-family: 'Font Awesome 5 Free';
+      top: 0;
+      color: #0c0; }
+    .site-content::after {
       content: '\f10e';
+      font-family: 'FontAwesome';
+      font-size: 8rem;
+      font-weight: 900;
       position: absolute;
-      top: -61px;
       right: -175px;
-      font-weight: 900; } }
+      top: 0;
+      color: #0c0; } }
 
 .entry-content p {
   font-size: 1rem; }

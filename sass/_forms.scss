@@ -9,11 +9,11 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 2px solid;
-  border-color: #0c0;
+  border-color: $green-color;
   border-radius: 3px;
   background: #222;
 
-  color: #0c0;
+  color: $green-color;
   font-size: 0.75rem;
   line-height: 1;
   padding: 0.6rem 2rem 0.4rem;
@@ -39,7 +39,7 @@ input[type='password'],
 input[type='search'],
 textarea {
   background-color: #222;
-  border: 2px solid #0c0;
+  border: 2px solid $green-color;
   border-radius: 3px;
 
   &:focus {
@@ -52,12 +52,21 @@ input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'] {
-  padding: 3px;
+  padding: 0.5em 2em;
+  @include tablet {
+    padding: 0.5em 10em;
+  }
 }
 
 textarea {
   padding-left: 3px;
   width: 100%;
+  @include tablet {
+    width: 130%;
+  }
+  @include desktop {
+    width: 130%;
+  }
 }
 .fa-search {
   border-color: #222;

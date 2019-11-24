@@ -1,13 +1,20 @@
 body {
-  background: #222;
-  color: white;
+  background: $background-color;
+  color: $primery-color;
   padding: 1em;
   line-height: 1.5;
   font-family: 'Exo', sans-serif;
   font-weight: lighter;
+
+  .logo {
+    @include desktop {
+      text-align: center;
+    }
+  }
+
   a {
     text-decoration: none;
-    color: #0c0;
+    color: $green-color;
   }
 }
 img {
@@ -16,31 +23,38 @@ img {
   @include tablet {
     width: 35em;
   }
+  @include desktop {
+    width: 45em;
+  }
 }
 
 .source {
   padding-top: 1.7em;
   a {
-    color: #0c0;
+    color: $green-color;
   }
 }
 .entry-meta {
   display: flex;
   flex-direction: row;
 }
+.button {
+  @include desktop {
+    padding-left: 15em;
+  }
+}
 button {
   font-size: 1.1rem;
   text-shadow: none;
   background-color: #222;
-  border: 2px solid #0c0;
+  border: 2px solid $green-color;
   border-radius: 3px;
-  color: #0c0;
+  color: $green-color;
   box-shadow: none;
 
   line-height: 1;
   padding: 0.8em 2.5em;
 }
-
 .post {
   .entry-content {
     p {
@@ -48,33 +62,39 @@ button {
       @include tablet {
         font-size: 2rem;
       }
+      @include desktop {
+        font-size: 2.5rem;
+        text-align: center;
+      }
     }
   }
 }
 
 .site-content {
   @include desktop {
-    margin: 4.5rem 175px 1.5rem;
+    max-width: 800px;
     position: relative;
-    &:before {
-      font-family: 'Font Awesome 5 Free';
+    margin: 0 auto;
+
+    &::before {
       content: '\f10d';
+      font-family: 'FontAwesome';
+      font-size: 8rem;
+      font-weight: 900;
       position: absolute;
-      color: green;
       left: -175px;
-      top: -61px;
-      // font-size: $icon;
-      font-weight: 900;
+      top: 0;
+      color: $green-color;
     }
-    &:after {
-      font-family: 'Font Awesome 5 Free';
+    &::after {
       content: '\f10e';
-      position: absolute;
-      // color: $color__border;
-      top: -61px;
-      right: -175px;
-      // font-size: $icon;
+      font-family: 'FontAwesome';
+      font-size: 8rem;
       font-weight: 900;
+      position: absolute;
+      right: -175px;
+      top: 0;
+      color: $green-color;
     }
   }
 }

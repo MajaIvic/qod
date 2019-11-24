@@ -1,10 +1,10 @@
 .category {
   article {
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted $primery-color;
     padding-bottom: 1em;
   }
   .page-title {
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted $primery-color;
     padding-bottom: 1em;
   }
 }

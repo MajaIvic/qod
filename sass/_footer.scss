@@ -2,15 +2,14 @@ footer {
   height: 80px;
   margin-top: 10%;
 }
-// .nav-info {
-// }
 
-// .main-navigation {
-// }
 .nav-info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  @include desktop {
+    padding-left: 50em;
+  }
 }
 
 .menu {
@@ -20,12 +19,12 @@ footer {
   margin-left: 0;
 
   li {
-    border-right: 1px solid #fff;
+    border-right: 1px solid $primery-color;
     line-height: 1;
   }
   a {
     text-decoration: none;
-    color: #0c0;
+    color: $green-color;
     padding-right: 1em;
     padding-left: 1em;
   }
@@ -34,6 +33,6 @@ footer {
   padding-left: 1em;
   a {
     text-decoration: none;
-    color: #0c0;
+    color: $green-color;
   }
 }
