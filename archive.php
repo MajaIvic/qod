@@ -37,8 +37,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<nav role="navigation" class="number-pagination"><span aria-current="page" class="page-numbers current">1</span>
-    <a class="page-numbers" href="https://quotes.academy.red/category/uncategorized/page/2/">2</a>
-    <a class="next page-numbers" href="https://quotes.academy.red/category/uncategorized/page/2/">Next →</a></nav>
-
+	
 <?php get_footer(); ?>

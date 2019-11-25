@@ -296,6 +296,8 @@ textarea {
       width: 130%; } }
 
 .fa-search {
+  content: '\f002';
+  font-family: 'Fontawesome';
   border-color: #222; }
 
 /*--------------------------------------------------------------
